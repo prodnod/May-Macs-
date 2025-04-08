@@ -1,0 +1,268 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff7e6; /* Keeping the whole page cream-colored */
+  color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff7e6; /* Keeping the navbar background cream-colored */
+    padding: 30px 0;
+    position: sticky;
+    top: 0; /* Makes the navbar stick to the top of the page */
+    z-index: 100;
+    border-bottom: 2px solid #eee;
+  }
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo and Title Container */
+.logo-container {
+  text-align: center;
+  position: relative;
+}
+
+.logo-title {
+  font-family: 'Chewy', cursive;
+  font-size: 4rem;
+  color: #f94f00;
+  margin-bottom: 20px;
+  transform: rotate(-5deg);
+  display: inline-block;
+  position: relative;
+  left: 0;
+}
+
+.logo-img {
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Menu toggle (hamburger) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f94f00;
+  padding: 5px 15px; /* Added some padding */
+  margin-left: 20px;
+  border-radius: 10px; /* Optional, add rounded corners for a softer look */
+}
+
+/* Main menu */
+.main-menu ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.main-menu ul li a {
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.main-menu ul li a:hover {
+  color: #f94f00;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff7e6; /* Cream background for hero section */
+}
+
+.logo-heading {
+  font-family: 'Chewy', cursive;
+  font-size: 4rem;
+  color: #f94f00;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.contact-info div {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-info strong {
+  font-size: 2rem;
+  margin: 10px 0;
+  display: block;
+  color: #1a1a1a;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #f94f00;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #e14400;
+}
+
+/* Hero Images Styling */
+.hero-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-img {
+  width: calc(50% - 7.5px); /* Ensures proper spacing between images */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff7e6; /* Cream background for footer */
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.social-links a {
+  color: #f94f00;
+  font-size: 1.8rem;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e14400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-menu {
+    display: none;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .main-menu.open {
+    display: block;
+  }
+
+  .main-menu ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .main-menu ul li a {
+    padding: 15px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+}
+/* Fix: Remove invalid CSS line */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.review-form-section {
+  padding: 60px 20px;
+  background-color: #fff7e6;
+  text-align: center;
+}
+
+.review-form-section .heading {
+  font-family: 'Chewy', cursive;
+  color: #f94f00;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.review-form-section .subheading {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
